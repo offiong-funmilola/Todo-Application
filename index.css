@@ -64,6 +64,10 @@
 .text {
     margin-right: 100px;
 }
+.hidden {
+    display: none;
+}
+ 
 #edit {
     background-color: var(--primaryColor);
 }
@@ -93,3 +97,4 @@
     background-color: rgb(0, 119, 255);
     color: white;
 }
+
