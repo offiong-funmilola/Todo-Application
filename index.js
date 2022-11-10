@@ -54,11 +54,10 @@ function editTodo(e) {
 }
 function updateTodo(e) {
      let updateButton = e.target;
-     e.target.parentNode.previousElementSibling.innerHTML = e.target.value;
+     e.target.parentNode.previousElementSibling.innerHTML = e.target.previousElementSibling.value;
      e.target.parentNode.previousElementSibling.classList.remove("hidden");
      e.target.parentNode.nextElementSibling.classList.remove("hidden");
      e.target.parentNode.classList.add("hidden")
-     todoInputField.value = e.target.parentNode.previousElementSibling.innerHTML;
 }
 function collectButtons() {
     deleteButtons = document.querySelectorAll(".delete-btn");
